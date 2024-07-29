@@ -1,0 +1,222 @@
+/* Custom css file made by JeanDoe */
+
+@charset 'utf-8';
+
+/* Import items */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/* declaration of root variables */
+
+:root{
+    /* fonts */
+    --body-font: 'Poppins', Arial, sans-serif;
+
+    /* colors */
+    --main-clr: #4461F2;
+    --white: #fff;
+    --black: #212224;
+    --black-clr: #567;
+    --light-clr: #888;
+    --light-bg: #F6F6F6;
+}
+
+/* Initialisations of tags */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: var(--body-font);
+}
+
+
+/* bases */
+
+html{
+    font-size: 90%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 0.938rem;
+    font-weight: normal;
+    background: var(--light-bg);
+}
+
+a{
+    color: var(--black);
+}
+
+/* resusables classes */
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn{
+    color: var(--main-clr);
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: .8rem 1rem;
+    border-radius: 1rem;
+    background: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.active_btn{
+    background: none;
+    box-shadow: none;
+    position: relative;
+}
+
+.active_btn::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 25%;
+    background: var(--main-clr);
+}
+
+.link{
+    color: var(--main-clr);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+/* header section starts */
+
+.header{
+    background: var(--light-bg);
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.header .navbar a{
+    font-size: 1rem;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-right: 0.8rem;
+}
+
+.header .options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header .options a:first-child{
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.header .options a:first-child i{
+    color: var(--light-clr);
+    font-size: 1.1rem;
+}
+
+
+/* sign in section starts */
+
+.signin{
+    
+}
+.signin .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.signin h1{
+    color: var(--black);
+    font-size: 1.6rem;
+}
+.signin img{
+    max-width: 30rem;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.signin p{
+    max-width: 15rem;
+    margin-top: 2rem;
+}
+
+
+/* form part starts */
+
+.form{
+    max-width: 25rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+.form .box{
+    padding: .8rem;
+    border-radius: .25rem;
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    background: #EAF0F7;
+}
+
+.form a{
+    display: block;
+    float: right;
+    color: var(--light-clr);
+    font-size: 0.813rem;
+}
+
+.form .btn{
+    width: 100%;
+    border-radius: .25rem;
+    cursor: pointer;
+    margin: 0.5rem 0;
+    padding: 0.7rem;
+}
+
+
+.form p{
+    display: block;
+    color: var(--light-clr);
+    font-size: 0.813rem;
+    text-align: center;
+    position: relative;
+}
+.form p::before{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 20px;
+    width: 50%;
+    background: var(--light-clr);
+}
+.form p::after{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    height: 20px;
+    width: 50%;
+    background: var(--light-clr);
+}

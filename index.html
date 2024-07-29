@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- box icons link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login UI Js - JeanDoe</title>
+</head>
+<body>
+<!-- login ui starts -->
+<header class="header">
+    <div class="container">
+        <nav class="navbar">
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">blog</a>
+            <a href="#">pages</a>
+            <a href="#">contact</a>
+        </nav>
+        <div class="options">
+            <a href="#" class="choose_btn">english <i class="bx bx-chevron-down"></i></a>
+            <a href="#" class="active_btn btn">sign in</a>
+            <a href="#" class="btn">register</a>
+        </div>
+    </div>
+</header>
+<section class="signin">
+    <div class="container">
+        <div class="intro">
+            <h1>Sign In to <br> Recharge Direct</h1>
+            <p>if you don’t have an account you can <a href="#" class="link">Register here!</a></p>
+        </div>
+        <img src="img/signin.png" alt="sign in image">
+    </div>
+    <aside class="form_container">
+        <form action="" method="post" class="form">
+            <input type="email" placeholder="Enter Email" class="box">
+            <input type="password" placeholder="Enter password" class="box">
+            <a href="#">recover Password ?</a>
+            <input type="submit" value="Sign In" class="btn" onclick="event.preventDefault()">
+            <p>Or continue with</p>
+            <div class="icons">
+                <a href="#" class="icon"></a>
+                <a href="#" class="icon"></a>
+                <a href="#" class="icon"></a>
+            </div>
+        </form>
+    </aside>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
